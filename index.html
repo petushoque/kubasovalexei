@@ -3,59 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./index.css">
   <title>Kubasov Alexei Website</title>
 </head>
+<body class="page">
 
-<body>
-<div class="page">
+<header class="header">
+    <h1 class="header__title">Hello, world!</h1>
+</header>
 
-  <header class="header">
-    <div class="header__my-photo"></div>
-    <div class="header__animation"></div>
-  </header>
+<main class="main">
 
-  <section class="about-me">
-    <h2 class="about-me__title">About me (in a few words)</h2>
-    <p class="about-me__paragraph">Hello, World!</p>
-    <p class="about-me__paragraph">My name is Alex, date of birth 15.09.1990, live in Barnaul, Altay, Russia.</p>
-    <p class="about-me__paragraph">And I'm an aspiring web developer :)</p>
-    <p class="about-me__paragraph">Professional experience</p>
+<section class="resume">
+    <img class="resume__image" src="./my_photo.jpg">
+    <h2 class="title">Кубасов Алексей</h2>
+    <p class="resume__paragraph">Веб-разработчик</p>
+    <p class="resume__paragraph">Возраст: 30 лет</p>
+    <h3 class="subtitle">Контактная информация</h2>
+    <p class="resume__paragraph">&#128222; Моб.: 8 913 258 6482</p>
+    <p class="resume__paragraph">&#128747; Telegram: <a class="resume__link" href="https://t.me/petushoque">Написать</a></p>
+    <p class="resume__paragraph">&#128231; Email: <a class="resume__link" href="mailto:kubasovalexei@yandex.ru">Написать</a></p>
+    <p class="resume__paragraph">&#128188; LinkedIn: <a class="resume__link" href="https://www.linkedin.cn/in/alexei-kubasov-8a0435203">Посмотреть</a></p>
+    <p class="resume__paragraph">&#127762; GitHub: <a class="resume__link" href="https://github.com/petushoque/">Почитать</a></p>
+    <p class="resume__paragraph">&#127919; CodeWars: <a class="resume__link" href="https://www.codewars.com/users/petushoque">Посмотреть</a></p>
+    <p class="resume__paragraph">&#127969; Родной город: Барнаул</p>
+    <h3 class="subtitle">Опыт работы</h2>
+    <p class="resume__paragraph">2012-2014: IT-инженер, ООО "Элком"</p>
+    <p class="resume__paragraph">Поддержка работоспособности небольшой компьютерной сети, настройка рабочих мест для работы с ЭЦП и участия в электронных аукционах.</p>
+    <p class="resume__paragraph">2014-2016: фриланс, Yandex Toloka, Upwork, Advego</p>
+    <p class="resume__paragraph">Самый широкий спектр выполняемых задач, от копирайта/рерайта статей и правок шаблонов и плагинов WordPress, до помощи в обучении ИИ при разметке объектов на изображении (люди, светофоры, автомобили).</p>
+    <p class="resume__paragraph">2016-...: асессор, Yandex</p>
+    <p class="resume__paragraph">Оценка релевантности поисковой выдачи сервисов Яндекса, поиска, картинок, видео, маркета, написание аннотаций к пользовательским запросам для дальнейшей разметки.</p>
+    <h3 class="subtitle">Навыки</h2>
     <ul>
-      <li>2012 - 2014, IT-engineer, Elkom LLC</li>
-      <li>2014 - 2016, freelance (Y.Toloka, Upwork)</li>
-      <li>2016 - currently, Assessor (evaluation of search quality), Yandex LLC</li>
+        <li>HTML &#127760;</li>
+        <li>CSS &#127754;</li>
+        <li>Flexbox</li>
+        <li>Grid</li>
+        <li>Верстка по БЭМ</li>
+        <li>Адаптивная верстка</li>
+        <li>Git</li>
+        <li>JS &#128293;</li>
+        <li>API</li>     
+        <li>Webpack</li>
+        <li>NodeJS</li>
+        <li>React</li>
     </ul>
-    <p class="about-me__paragraph">Education background</p>
-    <ul>
-      <li>2009 - 2012, Altay State University, Faculty of Physics and Technology</li>
-      <li>2020 - currently, Praktikum by Yandex, Faculty of web development</li>
-    </ul>
-    <p>It will be clearer about my skills if you look at my completed projects below on the page</p>
-    <p><a href="./docs/cv.pdf">Download resume</a></p>
+    <h3 class="subtitle">Образование</h2>
+    <p class="resume__paragraph">Yandex Praktikum,</p>
+    <p class="resume__paragraph">Факультет Веб-разработки</p>
+    <p class="resume__paragraph">Алтайский Государственный Университет,</p>
+    <p class="resume__paragraph">Физико-Технический Факультет</p>
+
+    <div class="navigation"><a class="navigation__link" href=#projects><p>Смотреть проекты &#128165;</p></a></div>
 </section>
 
 <section class="projects">
-  <h2 class="projects__title">Projects</h2>
-  <div class="projects__container">
-      <div class="project">
-          <a href="https://petushoque.github.io/mesto/"><img class="project__pic" src="./images/mesto-preview.gif"></a>
-          <p class="projects__project-text">Imperitia culpae adnumeratur. Iniuria non excusat iniuriam. In maxima potentia minima licentia. Ita utere tuo, ut alienum non laedas. Iuris effectus in excutione consistit. Iuris praecepta sunt haec: honeste vivere, alterum non laedare, suum ciuque tribuere. Ius est ars boni et aequi. Ius utendi-fruendi. Ius vitae necisque.</p>
-      </div>
-      <div class="project">
-          <a href="https://petushoque.github.io/russian-travel/"><img class="project__pic" src="./images/russia-preview.jpg"></a>
-          <p class="projects__project-text">Imperitia culpae adnumeratur. Iniuria non excusat iniuriam. In maxima potentia minima licentia. Ita utere tuo, ut alienum non laedas. Iuris effectus in excutione consistit. Iuris praecepta sunt haec: honeste vivere, alterum non laedare, suum ciuque tribuere. Ius est ars boni et aequi. Ius utendi-fruendi. Ius vitae necisque.</p>
-      </div>
-      <div class="project">
-          <a href="https://petushoque.github.io/how-to-learn/"><img class="project__pic" src="./images/learn-preview.gif"></a>
-          <p class="projects__project-text">Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
-      </div>
-  </div>
+
+    <a name="projects"><h3 class="title">Проекты</h3></a>
+
+    <div class="projects__container">
+        <div class="project">
+            <a href="./mesto"><img class="project__pic" src="./mesto-preview.gif"></a>
+            <div class="project__subscription">
+                <h3 class="project__subtitle">Проект "Место"</h3>
+                <p class="project__paragraph">Учебный проект, выполнен на чистом JS, страница адаптивна для различных экранов. Функционал: на страничке можно менять аватар и данные пользователя, добавлять и удалять карточки, ставить/убирать лайки, видеть общее их количество, все действия выполняются через запросы к api. Код написан согласно ООП.</p>
+                <p class="project__paragraph"><a class="project__link" href="https://github.com/petushoque/mesto">Посмотреть код проекта на GitHub</a></p>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="./russian-travel"><img class="project__pic" src="./russia-preview.jpg"></a>
+            <div class="project__subscription">
+                <h3 class="project__subtitle">Проект "Путешествие по России"</h3>
+                <p class="project__paragraph">Учебный проект, написанный для закрепления знаний по основам CSS. На проекте использованы технологии Flexbox и Grid. Все стили и структура оформлены по методологии БЭМ. Страница сверстана по макету из Figma адаптивно под разные устройства.</p>
+                <p class="project__paragraph"><a class="project__link" href="https://github.com/petushoque/russian-travel">Посмотреть код проекта на GitHub</a></p>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="./how-to-learn"><img class="project__pic" src="./learn-preview.gif"></a>
+            <div class="project__subscription">
+                <h3 class="project__subtitle">Проект "Научиться учиться"</h3>
+                <p class="project__paragraph">Учебный проект, который был сверстан по макету, с использованием PerfectPixel. На странице есть анимация, выполненная через CSS. Код написан по БЭМ.</p>
+                <p class="project__paragraph"><a class="project__link" href="https://github.com/petushoque/how-to-learn">Посмотреть код проекта на GitHub</a></p>
+            </div>
+        </div>
+
+        <div class="project">
+            <a href="http://deutschegrammatik.fun/"><img class="project__pic" src="./dg-preview.gif"></a>
+            <div class="project__subscription">
+                <h3 class="project__subtitle">Проект "Deutsche Grammatik"</h3>
+                <p class="project__paragraph">Мой маленький пет-проект, создается для помощи в изучении немецкого языка. Код объектно-ориентирован, пишется на чистом JS.</p>
+                <p class="project__paragraph"><a class="project__link" href="https://github.com/petushoque/deutschegrammatik">Посмотреть код проекта на GitHub</a></p>
+            </div>
+        </div>
+    </div>
+
 </section>
 
-<footer class="footer">
-    <p>GH: https://github.com/petushoque/</p>
-    <p>LI: https://www.linkedin.cn/in/alexei-kubasov-8a0435203 </p>
-</footer>
-</div>
+</main>
 </body>
